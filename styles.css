@@ -64,13 +64,15 @@ header .barra .inicio button {
 }  
 
 header .barra .search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
     padding: 10px 14px 10px 10px;  
-    backgroun;
+    background-color:gainsboro;
     border-radius: 20px;
     border: 1px solid; color: gray;
 }
-
 
 
 header .barra .search input {
@@ -78,6 +80,21 @@ header .barra .search input {
     height: 30px;
     border: none;
     background-color: transparent;
+
+}
+
+header .barra .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    min-width: 50px;
+    height: 50px;
+    margin: 0px 0px 0px 15px;
+}
+
+header .barra .buttons:hover {
+    background-color: gainsboro;
 }
 
 header .barra button {
@@ -101,4 +118,6 @@ main div.gallery img {
 main div.gallery {
     columns:5 350px;
     column-gap: 0.5em;
+    margin-top: 3rem;
+    padding-top: 2rem;
 }
